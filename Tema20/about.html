@@ -28,6 +28,27 @@ body {
 </head>
 
 <body>
+<table border="0" width="100%" cellpadding="20">
+   <tr style="font-size:25px;">
+    <th>Contact us</th>
+    <th width="51%">Location</th>
+   </tr>
+ </table>
+
+<div id="googleMap" style="width:50%;height:350px; position: absolute; right: 10px"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(49.8359077,24.0207859,17),
+  zoom:8,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOENGWwRtPSi7SoHYTqBvq4XnkhhU-u7c&callback=myMap"></script>
 
 </body>
 
